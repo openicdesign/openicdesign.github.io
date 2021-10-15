@@ -1,1 +1,0 @@
-# openicdesign.github.io
