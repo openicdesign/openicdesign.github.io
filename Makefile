@@ -17,8 +17,8 @@ links:
 
 presentations:
 	perl -e 'print("---\ntitle: Presentations\n---\n\n")' > docs/presentations.md
-	ls -1 presentations/*.md|sort|perl -ne 's/presentations\///ig;s/\.md//ig;s/\n//ig;print("__[$$_](assets/presentations/$$_.pdf)__ ");print(`cat  presentations/$$_.md `."\n\n");' >> docs/presentations.md
+	perl -e 'use strict; use warnings; my $$dir="presentations"; opendir(my $$dh,$$dir) or exit 0; my @files = sort grep { /\.md$$/i && -f "$$dir/$$_" } readdir($$dh); closedir($$dh); foreach my $$file (@files) { (my $$slug=$$file)=~s/\.md$$//i; print "__[$$slug](assets/presentations/$$slug.pdf)__ "; open(my $$fh,"<","$$dir/$$file") or next; local $$/; print <$$fh>; print "\n\n"; }' >> docs/presentations.md
 
 publications:
 	perl -e 'print("---\ntitle: Publications\n---\n\n")' > docs/publications.md
-	ls -1 publications/*.md|sort|perl -ne 's/publications\///ig;s/\.md//ig;s/\n//ig; $$fname = $$_; if($$fname =~ m/__/ig){$$fname =~ s/^.*__//ig;}print("__[$$_](assets/publications/$$fname.pdf)__ ");print(`cat  publications/$$_.md `."\n\n");' >> docs/publications.md
+	perl -e 'use strict; use warnings; my $$dir="publications"; opendir(my $$dh,$$dir) or exit 0; my @files = sort grep { /\.md$$/i && -f "$$dir/$$_" } readdir($$dh); closedir($$dh); foreach my $$file (@files) { (my $$display=$$file)=~s/\.md$$//i; my $$asset=$$display; $$asset =~ s/^.*__// if $$asset =~ /__/; print "__[$$display](assets/publications/$$asset.pdf)__ "; open(my $$fh,"<","$$dir/$$file") or next; local $$/; print <$$fh>; print "\n\n"; }' >> docs/publications.md
