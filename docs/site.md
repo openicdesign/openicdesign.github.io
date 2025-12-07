@@ -4,7 +4,7 @@ title: Site
 
 An overview of all sites on aisi.asicedu.com
 
- - [analogIC](https://aisi.asicedu.com/analogic) - analogIC Notes on Advanced Integrated Circuits
+ - [analogIC](https://aisi.asicedu.com/analogIC) - analogIC Notes on Advanced Integrated Circuits
  - [aicex](https://analogicus.com/aicex) - aicex   I’d love to simplify analog integrated circuit design.
  - [ciccreator](https://analogicus.com/ciccreator) - Custom IC Creator &#8212; Custom IC Creator  documentation
  - [cicsim](https://analogicus.com/cicsim) - cicsim   I’d love to simplify analog integrated circuit design.
