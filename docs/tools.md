@@ -5,7 +5,7 @@ title: Tools
 Along the way I've learned some tools and try to collect them, and open source tools are powerful because they let me understand how everything works together to complete the IC flow.
 
 
-### [ciccreator](/ciccreator)
+### [ciccreator](https://analogicus.com/ciccreator)
 I got an opportunity to do a part-time Post.doc. I'd just finished a couple SAR
 ADC designs for nRF52, and I never wanted to draw layout, or indeed schematics
 of a SAR again. I thought there must be a better way. Especially porting to
