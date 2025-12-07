@@ -8,10 +8,14 @@ content was in parsable formats.
 
 Below is a collection of legacy content
 
+{% assign legacy_items = site.legacy %}
+{% if legacy_items and legacy_items.size > 0 %}
 <ul>
- {% assign sorted = site.legacy | sort: 'date' | reverse %}
+  {% assign sorted = legacy_items | sort: 'date' | reverse %}
   {% for obj in sorted %}
     <li><a href="{{ obj.url }}">{{ obj.date | date: "%Y-%m-%d"  }} - {{ obj.title }}</a></li>
-
   {% endfor %}
 </ul>
+{% else %}
+<p>More archived content will land here once the legacy collection is populated.</p>
+{% endif %}
