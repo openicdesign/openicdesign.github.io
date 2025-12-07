@@ -3,17 +3,8 @@
 title: Education
 ---
 
-From 2021 I've been teaching courses at NTNU.
+## Analog IC Design
 
+- [analogIC](/analgoIC) - [PDF](/analogIC/assets/analogic.pdf) [epub](/analogIC/assets/analogic.epub)
 
-## [Advanced Integrated Circuits](https://www.ntnu.edu/studies/courses/TFE4188)
-
-- [aic2026](/aic2026) - [PDF](/aic2026/assets/aic.pdf) [epub](/aic2026/assets/aic.epub)
-- [aic2025](/aic2025) - [PDF](/aic2025/assets/aic.pdf) [epub](/aic2025/assets/aic.epub)
-- [aic2024](/aic2024) - [PDF](/aic2024/assets/aic.pdf) [epub](/aic2024/assets/aic.epub)
-- [aic2023](/aic2023) - [PDF](/aic2023/assets/aic.pdf) [epub](/aic2023/assets/aic.epub)
-- [aic2022](https://github.com/wulffern/aic2022)
-
-
-## [Design Of Integrated Circuits](https://www.ntnu.edu/studies/courses/TFE4152)
 
