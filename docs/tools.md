@@ -2,13 +2,7 @@
 title: Tools
 ---
 
-I've been on a quest for the last 20 years to simplify how we make analog
-circuits.
-
-I can't say I've succeded yet, but that's not the point, it's an interesting
-path to walk.
-
-Along the way I've created some tools.
+Along the way I've learned some tools and try to collect them, and open source tools are powerful because they let me understand how everything works together to complete the IC flow.
 
 
 ### [ciccreator](/ciccreator)
@@ -41,6 +35,4 @@ and result processing, however, during
 2022 it transformed into controlling ngspice. 
 
 I learned of the SkyWater 130 nm Open PDK, and went all in.
-
-
 
